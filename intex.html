@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liked Songs | Spotify</title>
+    <link rel="shortcut icon" href="./assests/spotify-favicon.png" type="image/x-icon">
+    <meta
+      name="description"
+      content="Spotify is a digital music service that gives you access to millions of songs."
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-conatiner">
+      <!-- ----------------------- -->
+      <!-- side-bar-ablbum  -->
+      <div class="side-bar">
+        <div class="side-bar-content">
+          <div class="nav-item nav-line-seperation">
+            <!-- spotify logo -->
+            <div class="spotify-logo">
+              <img src="Assests/Slogo.png" alt="logo" />
+            </div>
+
+            <!-- home-search-library -->
+            <div class="home-section-album">
+              <div class="logo-flex">
+                <img src="Assests/home.png" alt="home" />
+                <p>Home</p>
+              </div>
+
+              <div class="logo-flex">
+                <img src="Assests/Search.png" alt="search" />
+                <p>search</p>
+              </div>
+
+              <div class="logo-flex">
+                <img src="Assests/library.png" alt="library" />
+                <p>Your Library</p>
+              </div>
+            </div>
+            <!-- playlist-section -->
+            <div class="nav-item nav-line-seperation playlist-section-album">
+              <p>Playlist</p>
+              <div class="logo-flex">
+                <img src="Assests/plus.png" alt="button" />
+                <p>Create Playlist</p>
+              </div>
+              <div class="logo-flex">
+                <img src="Assests/littleheart.png" alt="liked songs" />
+                <p>Liked Songs</p>
+              </div>
+            </div>
+          </div>
+          <!-- album-art -->
+
+          <hr
+            width="70%"
+            height="1px"
+            style="margin-top: 0px; background-color: lightgray"
+          />
+          <div class="album-art">
+            <img src="Assests/Girl.png" alt="album" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ------------------------- -->
+      <!-- main-content-album -->
+      <div class="right">
+        <div class="playlist-header">
+          <div class="playlist-content">
+            <div class="playlist-cover">
+              <img src="Assests/poster.png" alt="poster" />
+            </div>
+            <div class="playlist-info">
+              <div class="playlist-public common">Playlist</div>
+              <div class="playlist-title common">Pop Right Now</div>
+              <div class="playlist-description">
+                A soundtracks for your good mood while on the Long-Drive.
+              </div>
+              <div style="height: 5px"></div>
+              <div class="playlist-stats">
+                <span class="name common-1"> Spotify </span>
+                <span class="time common-1">• 5,131,321 likes </span>
+                <span class="time common-1">• 100 songs, </span>
+                <span class="time common-1">5 hr 57 min </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="playlist-songs-container">
+          <div class="playlist-buttons">
+            <div class="playlist-buttons-left">
+              <div class="playlist-buttons-resume-pause">
+                <i class="fa-sharp fa-solid fa-play" style="color: #ffffff"></i>
+              </div>
+              <div class="playlist-buttons-like normal">
+                <img src="Assests/heart.png" alt="" class="spotify-color" />
+              </div>
+              <div class="playlist-buttons-three-dot normal">
+                <img src="Assests/more_big.png" alt="" />
+              </div>
+            </div>
+            <div class="playlist-buttons-right normal">
+              <div class="playlist-buttons-search normal"></div>
+            </div>
+          </div>
+
+          <div class="playlist-songs" id="listofsongs">
+            <table>
+              <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Album</th>
+                <th>Date Added</th>
+              </tr>
+              <tr>
+                <!-- 1 -->
+                <td>1</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 21, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+              <tr>
+                <!-- 2 -->
+                <td>2</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 22, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+              <tr>
+                <!-- 3 -->
+                <td>3</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 23, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+
+              <!-- 4 -->
+              <tr>
+                <td>4</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 24, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+
+              <!-- 5 -->
+              <tr>
+                <td>5</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 25, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+
+              <!-- 6 -->
+              <tr>
+                <td>6</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 26, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+
+              <!-- 7 -->
+              <tr>
+                <td>7</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">October 28, 2023</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+
+              <!-- 8 -->
+              <tr>
+                <td>8</td>
+                <td class="song-title">
+                  <div class="song-image">
+                    <img src="Assests/one.png" alt="song" />
+                  </div>
+                  <div class="song-name-album">
+                    <div class="song-name">We’re Good</div>
+                    <div class="song-artist">Dua Lipa</div>
+                  </div>
+                </td>
+                <td class="song-album">Future (The Moonlight Edition)</td>
+                <td class="song-date-added">July 15, 2022</td>
+                <td class="song-duration">
+                  <img src="Assests/heart.png" alt="" class="heart1" />
+                  3:45
+                  <img src="Assests/more_big.png" alt="" class="dot" />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom-music player -->
+    <!-- ................... -->
+    <div class="music-player">
+      <div class="song-bar">
+        <div class="song-infos">
+          <div class="image-container">
+            <img src="assests/one.png" alt="" />
+          </div>
+          <div class="song-description">
+            <p class="title">We’re Good</p>
+            <p class="artist">Dua Lipa</p>
+          </div>
+        </div>
+        <div class="icons">
+          <img src="Assests/smallheart.png" alt="heart" />
+        </div>
+        <div class="icons">
+          <img src="Assests/pip.png " class="pip" />
+        </div>
+      </div>
+      <div class="progress-controller">
+        <div class="control-buttons">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="fa-solid fa-play play-pause"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fa-solid fa-repeat fa-beat"></i>
+        </div>
+        <div class="progress-container">
+          <h4>1:30</h4>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <h4>3:50</h4>
+        </div>
+      </div>
+      <div class="other-features">
+        <img src="Assests/lines.png" alt="que-icon" />
+        <img src="Assests/speaker.png" alt="laptop-icon" />
+        <img src="Assests/Sound.png" alt="speaker icon" />
+        <div class="volume-bar">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="end">
+      <div class="last"></div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/0b381e01ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
